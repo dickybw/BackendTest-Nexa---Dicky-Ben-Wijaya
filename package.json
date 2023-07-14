@@ -1,0 +1,26 @@
+{
+  "name": "test_bedev_nexa",
+  "version": "1.0.0",
+  "description": "api using expressjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "dicky ben wijaya",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mysql2": "^3.5.1",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^3.0.1"
+  }
+}

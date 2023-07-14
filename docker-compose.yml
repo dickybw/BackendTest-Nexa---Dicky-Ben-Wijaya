@@ -1,0 +1,23 @@
+version: "3.3"
+
+services:
+  app:
+    container_name: 'app'
+    build: .
+    volumes:
+        - .:/app
+        - node_modules:/app/node_modules
+    ports:
+      - 3000:3000
+    stdin_open: true
+    environment:
+      - DB_HOST=gmedia.bz
+      - DB_USER=gmedia_democase2
+      - DB_PASSWORD=Janglidalam29J
+      - DB_NAME=gmedia_democase
+      - DB_PORT=3306
+      - PORT=3000
+      - SECRET=nexatest
+    command: npm start
+  volumes:
+    node_modules:
